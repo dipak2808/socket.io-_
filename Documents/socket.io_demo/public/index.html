@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatApp</title>
+    <style>
+        .container {
+            max-width: 900px;
+            border: 2px solid black;
+            height: 800px;
+            margin: auto;
+        }
+
+        #text {
+            position: fixed;
+            bottom: 59px;
+            width: 753px;
+            height: 40px;
+            margin: 5px;
+            left: 546px;
+        }
+
+        .btn {
+            position: fixed;
+            bottom: 65px;
+            right: 517px;
+            width: 68px;
+            height: 46px;
+        }
+
+        .message {
+            border: 1px solid black;
+            width: 200px;
+            height: 25px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .left {
+            float: left;
+            clear: both;
+        }
+
+        .right {
+            float: right;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="message left">hii</div>
+        <div class="message right">hello</div>
+        <form id='form' action="">
+            <input type="text" id="text" autocomplete="off">
+            <button class="btn">send</button>
+        </form>
+
+    </div>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="main.js"></script>
+
+</body>
+
+</html>
